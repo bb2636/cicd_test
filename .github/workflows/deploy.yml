@@ -1,0 +1,13 @@
+name: Github Action 실행하기
+
+#master 브랜치에서 push 발생 시 실행되는 workflow
+on:
+  push:
+    branches:
+      - master
+jobs:
+  My-first-CICD-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: simple-web
+        run: echo "this is the first auto cicd step1"
